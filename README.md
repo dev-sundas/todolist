@@ -24,7 +24,7 @@
 
 #### Html code for add function
 
-> This is html code for adding a "add" button in to-do list
+> This is a html code for adding a "add" button in to-do list
 
 ```
 <div class="row">
@@ -35,7 +35,7 @@
 
 #### Javascript code for add function
 
-> This is Js code to add a fuction behind the add button which adds your to-do
+> This is a Js code to add a fuction behind the add button which adds your to-do
 
 ```
 
@@ -59,7 +59,7 @@ savedata()
 
 ### Demo code for delete function
 
-> This is Js code to built a cross icon in your to-do and and for deleting your to-do
+> This is a Js code to build a cross icon in your to-do and and for deleting your to-do
 
 ```
 
