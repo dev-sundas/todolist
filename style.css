@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins':wght@300;400;500;600;700;800;900& display=swap");
+* 
+{ margin:0 ;
+    padding: 0 ;
+    box-sizing:border-box;
+    font-family:"popins",sans-serif;}
+.container{
+    width: 100%;
+    min-height:100vh ;
+    background: url(https://images.inc.com/uploaded_files/image/1920x1080/getty_514914078_200013332000928076_167571.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+    margin-left: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    margin-top: 100px;
+    background:transparent;
+    margin: 100px 100px 20px 60%;
+    padding: 30px  30px 300px;
+    border-radius: 10px;
+
+    
+}
+
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app img{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#edeef0;
+    border-radius: 30px;
+
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none ;
+    font-size: 16px;
+    background: transparent;
+    padding: 20px ;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: skyblue;
+    border-radius: 40px;
+    color: wheat;
+    padding: 16px 50px  ;
+    font-size: 16px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    background-image: url(https://caterpillar.scene7.com/is/image/Caterpillar/CM20210409-fdb37-b78dd?$pcc-pdp2$);
+    border-color:2px solid white ;
+    border-radius: 50px;
+    background-position: center;
+    background-size:cover ;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    color:black;
+    text-decoration: line-through;
+} 
+
+ul li.checked::before{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/875/054/small/check-mark-on-blue-background-with-long-shadow-icon-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-vector.jpg);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:40px ;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+ul li span:hover{
+    background-color: #edeef0;
+}
+
+@media(max-width:700px){
+    .container{
+        background: url(https://img.freepik.com/free-vector/brochure-design-template-mockup-vector_53876-61567.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1703462400&semt=ais)no-repeat;
+        background-position:center ;
+    }
+
+    .todo-app{
+        max-width: 200px;
+        margin: 0 100px 20px 15%;
+       }
+
+    .todo-app img{
+        width: 40px;
+        height: 40px;
+        margin-left:20px;
+    }   
+    .todo-app h2{
+        font-size: 13px;
+    }
+
+    .row{
+        border-radius:15px;
+        padding:3px;
+    
+    }
+
+    input{
+        font-size:10px;
+        padding: 5px ;
+    }
+
+    button{
+        background-color:rgb(182, 126, 235);
+        border-radius: 15px;
+        color: wheat;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    ul li{
+        font-size:10px;
+        padding: 12px 8px 12px 35px;
+    }
+
+    ul li span{
+        font-size:15px;
+        right:-30px;
+        top: 0;
+       line-height: 35px;
+    
+    }
+
+    ul li::before{
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        left:10px;
+    
+    }
+
+} 
